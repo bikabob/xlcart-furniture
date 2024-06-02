@@ -151,7 +151,7 @@ def send_order_email(request):
         subject=email_subject,
         message=email_message,
         from_email=from_email,
-        recipient_list=(recipient_email)
+        recipient_list=[recipient_email]
     )
     return HttpResponse('Order confirmation email sent to admin.')
 
