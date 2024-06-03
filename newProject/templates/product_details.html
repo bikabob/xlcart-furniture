@@ -18,7 +18,6 @@
 <body>
     <!-- Navbar -->
     {% include 'nav.html' %}
-    
 
     <!-- Single Product -->
     <div class="container mt-4 single-product">
@@ -48,7 +47,7 @@
                 <p class="product-detail">Material: {{instance.material}}</p>
                 <p class="product-detail">Warranty: {{instance.warranty}}</p>
                 <p class="product-detail">Brand: {{instance.brand}}</p>
-                <p class="product-detail">Features: {{instance.features}}</p>
+                {% comment %} <p class="product-detail">Features: {{instance.features}}</p> {% endcomment %}
                 <h3 class="mt-4">Care & Instructions</h3>
                 <p class="care-instructions">{{instance.care_instruction}}</p>
             </div>
